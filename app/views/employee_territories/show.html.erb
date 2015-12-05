@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Employeeid:</strong>
+  <%= @employee_territory.EmployeeID %>
+</p>
+
+<p>
+  <strong>Territoryid:</strong>
+  <%= @employee_territory.TerritoryID %>
+</p>
+
+<%= link_to 'Edit', edit_employee_territory_path(@employee_territory) %> |
+<%= link_to 'Back', employee_territories_path %>

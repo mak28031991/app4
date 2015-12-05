@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Customer Customer Demos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Customerid</th>
+      <th>Customertypeid</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @customer_customer_demos.each do |customer_customer_demo| %>
+      <tr>
+        <td><%= customer_customer_demo.CustomerID %></td>
+        <td><%= customer_customer_demo.CustomerTypeID %></td>
+        <td><%= link_to 'Show', customer_customer_demo %></td>
+        <td><%= link_to 'Edit', edit_customer_customer_demo_path(customer_customer_demo) %></td>
+        <td><%= link_to 'Destroy', customer_customer_demo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Customer customer demo', new_customer_customer_demo_path %>
